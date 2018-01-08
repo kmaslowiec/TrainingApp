@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.trainwithme.MainActivity">
+    tools:context=".MainActivity">
 
     <!-- TOP BOTH LAYOUT -->
 
@@ -62,12 +62,26 @@
         <!-- END OF TOP BOTH LAYOUT -->
     </LinearLayout>
 
+    <!-- BOTTOM BOTH LAYOUT -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+
+        >
+
+
+
     <!-- BOTTOM LEFT INNER LAYOUT -->
 
     <LinearLayout
         android:id="@+id/bottom_left_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
 
         <TextView
             android:layout_width="wrap_content"
@@ -82,19 +96,23 @@
 
     <LinearLayout
         android:id="@+id/bottom_right_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Bottom Right Corner!"
+            android:layout_gravity="center_horizontal"
             />
 
         <!-- END OF BOTTOM RIGHT LAYOUT -->
     </LinearLayout>
 
+        <!-- END OF BOTTOM BOTH LAYOUT -->
+    </LinearLayout>
 
-
-
-</LinearLayout>
+<!-- END OF MAIN LAYOUT -->
+</RelativeLayout>
