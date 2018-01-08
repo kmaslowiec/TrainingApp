@@ -6,13 +6,71 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.trainwithme.MainActivity">
 
-    <TextView
+    <!-- TOP LEFT INNER LAYOUT -->
+
+    <LinearLayout
+        android:id="@+id/top_left_layout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Training App!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Left Corner"
+            />
+
+        <!-- END OF TOP LEFT LAYOUT -->
+    </LinearLayout>
+
+    <!-- TOP RIGHT INNER LAYOUT -->
+
+    <LinearLayout
+        android:id="@+id/top_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Right Corner!"
+            />
+
+        <!-- END OF TOP RIGHT LAYOUT -->
+    </LinearLayout>
+
+    <!-- BOTTOM LEFT INNER LAYOUT -->
+
+    <LinearLayout
+        android:id="@+id/bottom_left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom Left Corner!"
+            />
+
+        <!-- END OF BOTTOM LEFT LAYOUT -->
+    </LinearLayout>
+
+    <!-- BOTTOM RIGHT INNER LAYOUT -->
+
+    <LinearLayout
+        android:id="@+id/bottom_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom Right Corner!"
+            />
+
+        <!-- END OF BOTTOM RIGHT LAYOUT -->
+    </LinearLayout>
+
+
+
 
 </RelativeLayout>
