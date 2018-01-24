@@ -22,22 +22,50 @@
 
     <!-- TOP LEFT INNER LAYOUT -->
 
-    <LinearLayout
-        android:id="@+id/top_left_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/top_left_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Top Left Corner"
-            />
+            android:layout_weight="1"
+            android:orientation="vertical"
 
-        <!-- END OF TOP LEFT LAYOUT -->
-    </LinearLayout>
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Top Left Corner"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Rep"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Timer"
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/done"
+
+                />
+
+            <!-- END OF TOP LEFT LAYOUT -->
+        </LinearLayout>
 
     <!-- TOP RIGHT INNER LAYOUT -->
 
@@ -45,15 +73,44 @@
         android:id="@+id/top_right_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_weight="1"
 
 
         >
 
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Top Right Corner!"
+            android:layout_gravity="center_horizontal"
+            android:text="Top Right Corner"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Rep"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Timer"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/done"
+
             />
 
         <!-- END OF TOP RIGHT LAYOUT -->
@@ -78,6 +135,7 @@
 
     <LinearLayout
         android:id="@+id/bottom_left_layout"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -86,7 +144,32 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:text="Bottom Left Corner!"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Rep"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Timer"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/done"
+
             />
 
         <!-- END OF BOTTOM LEFT LAYOUT -->
@@ -98,14 +181,39 @@
         android:id="@+id/bottom_right_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_weight="1"
         >
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bottom Right Corner!"
             android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Rep"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Timer"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/done"
+
             />
 
         <!-- END OF BOTTOM RIGHT LAYOUT -->
