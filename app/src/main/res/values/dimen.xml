@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin">15dp</dimen>
+    <dimen name="bottom_margin">5dp</dimen>
+
+    <dimen name="head_size">15sp</dimen>
+    <dimen name="set_size">20sp</dimen>
+    <dimen name="timer_size">25sp</dimen>
+
+
+
+</resources>

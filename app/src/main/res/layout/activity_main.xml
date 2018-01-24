@@ -35,24 +35,40 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
                 android:layout_gravity="center_horizontal"
-                android:text="Top Left Corner"
 
+                android:textSize="@dimen/head_size"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/top_left"
+
+                />
+
+            <TextView
+                android:id="@+id/set_top_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:layout_gravity="center_horizontal"
+
+                android:textSize="@dimen/set_size"
+                android:textColor="@color/black"
+                android:text="@string/sets"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
                 android:layout_gravity="center_horizontal"
-                android:text="Rep"
 
-                />
+                android:textStyle="bold"
+                android:textSize="@dimen/timer_size"
+                android:textColor="@color/black"
+                android:text="@string/timer"
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="Timer"
 
                 />
 
@@ -84,24 +100,40 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
             android:layout_gravity="center_horizontal"
-            android:text="Top Right Corner"
+
+            android:textSize="@dimen/head_size"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/top_right"
+
+            />
+
+        <TextView
+            android:id="@+id/set_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_gravity="center_horizontal"
+
+            android:textSize="@dimen/set_size"
+            android:textColor="@color/black"
+            android:text="@string/sets"
 
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
             android:layout_gravity="center_horizontal"
-            android:text="Rep"
 
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Timer"
+            android:textStyle="bold"
+            android:textSize="@dimen/timer_size"
+            android:textColor="@color/black"
+            android:text="@string/timer"
 
             />
 
@@ -144,29 +176,46 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
             android:layout_gravity="center_horizontal"
-            android:text="Bottom Left Corner!"
+
+            android:textSize="@dimen/head_size"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/bottom_left"
+            />
+
+        <TextView
+            android:id="@+id/set_bottom_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_gravity="center_horizontal"
+
+            android:textSize="@dimen/set_size"
+            android:textColor="@color/black"
+            android:text="@string/sets"
+
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
             android:layout_gravity="center_horizontal"
-            android:text="Rep"
 
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Timer"
+            android:textStyle="bold"
+            android:textSize="@dimen/timer_size"
+            android:textColor="@color/black"
+            android:text="@string/timer"
 
             />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
             android:layout_gravity="center_horizontal"
             android:text="@string/done"
 
@@ -188,29 +237,47 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bottom Right Corner!"
+            android:layout_margin="@dimen/margin"
             android:layout_gravity="center_horizontal"
+
+            android:textSize="@dimen/head_size"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/bottom_right"
+
+            />
+
+        <TextView
+            android:id="@+id/set_bottom_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_gravity="center_horizontal"
+
+            android:textSize="@dimen/set_size"
+            android:textColor="@color/black"
+            android:text="@string/sets"
+
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
             android:layout_gravity="center_horizontal"
-            android:text="Rep"
 
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Timer"
+            android:textStyle="bold"
+            android:textSize="@dimen/timer_size"
+            android:textColor="@color/black"
+            android:text="@string/timer"
 
             />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
             android:layout_gravity="center_horizontal"
             android:text="@string/done"
 
