@@ -2,21 +2,24 @@ package com.example.android.trainwithme;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
-import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Build;
 import android.os.CountDownTimer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.TextView;
-
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends Activity {
     TextView txt;
+    boolean flag = true;
+
+    int i = 1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,23 +32,63 @@ public class MainActivity extends Activity {
 
     }
 
-    public void timer(View view) {
+    public void timerLeftTop(View view) {
 
-        txt = (TextView) findViewById(R.id.timer2);
 
-        txt.setText("Test");
+        if (flag) {
+            txt = findViewById(R.id.timer_left_top);
+            final CounterClass time = new CounterClass(3000, 1000, R.id.set_top_left, R.id.button_left_top);
+            time.start();
 
-        final CounterClass time = new CounterClass(30000  , 1000);
 
-        time.start();
+            flag = false;
+        }
+
+
+    }
+
+    public void timerRightTop(View view) {
+        if (flag ) {
+            txt = findViewById(R.id.timer_right_top);
+            final CounterClass time = new CounterClass(3000, 1000, R.id.set_top_right, R.id.button_right_top);
+            time.start();
+            flag = false;
+        }
+
+    }
+
+    public void timerLeftBottom(View view) {
+        if (flag ) {
+            txt = findViewById(R.id.timer_left_bottom);
+            final CounterClass time = new CounterClass(3000, 1000, R.id.set_bottom_left, R.id.button_left_bottom);
+            time.start();
+            flag = false;
+        }
+
+    }
+
+    public void timerRightBottom(View view) {
+        if (flag ) {
+            txt = findViewById(R.id.timer_right_bottom);
+            final CounterClass time = new CounterClass(3000, 1000, R.id.set_bottom_right, R.id.button_right_bottom);
+            time.start();
+            flag = false;
+        }
 
     }
 
     @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     @SuppressLint("NewApi")
     public class CounterClass extends CountDownTimer {
-        public CounterClass(long millisInFuture, long countDownInterval) {
+        private int view;
+        private int button;
+
+
+        CounterClass(long millisInFuture, long countDownInterval, int view, int button) {
             super(millisInFuture, countDownInterval);
+            this.view = view;
+            this.button = button;
+
         }
 
         @TargetApi(Build.VERSION_CODES.GINGERBREAD)
@@ -71,7 +114,27 @@ public class MainActivity extends Activity {
         @Override
         public void onFinish() {
 
-            txt.setText("Complete");
+
+            TextView set = findViewById(view);
+            Button butt = findViewById(button);
+
+            if (i < 3) {
+                i++;
+                set.setText(String.format(Locale.CANADA, "%d/3", i));
+                Log.i("MainActivity", "i is " + i);
+            }
+            if (i == 3) {
+                set.setAllCaps(true);
+                set.setText(getResources().getString(R.string.done));
+                butt.setClickable(false);
+                i = 1;
+
+            }
+
+            txt.setText(getResources().getString(R.string.timer));
+
+            flag = true;
+
 
         }
 

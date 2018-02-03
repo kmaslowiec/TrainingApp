@@ -59,8 +59,7 @@
                 />
 
             <TextView
-                android:id="@+id/timer2"
-
+                android:id="@+id/timer_left_top"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin"
@@ -75,11 +74,12 @@
                 />
 
             <Button
+                android:id="@+id/button_left_top"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/done"
-                android:onClick="timer"
+                android:onClick="timerLeftTop"
                 />
 
             <!-- END OF TOP LEFT LAYOUT -->
@@ -127,6 +127,7 @@
             />
 
         <TextView
+            android:id="@+id/timer_right_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin"
@@ -140,10 +141,12 @@
             />
 
         <Button
+            android:id="@+id/button_right_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="@string/done"
+            android:onClick="timerRightTop"
 
             />
 
@@ -202,6 +205,7 @@
             />
 
         <TextView
+            android:id="@+id/timer_left_bottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin"
@@ -215,12 +219,13 @@
             />
 
         <Button
+            android:id="@+id/button_left_bottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/bottom_margin"
             android:layout_gravity="center_horizontal"
             android:text="@string/done"
-
+            android:onClick="timerLeftBottom"
             />
 
         <!-- END OF BOTTOM LEFT LAYOUT -->
@@ -264,6 +269,7 @@
             />
 
         <TextView
+            android:id="@+id/timer_right_bottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin"
@@ -277,11 +283,13 @@
             />
 
         <Button
+            android:id="@+id/button_right_bottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/bottom_margin"
             android:layout_gravity="center_horizontal"
             android:text="@string/done"
+            android:onClick="timerRightBottom"
 
             />
 
