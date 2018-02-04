@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Train\' With Me</string>
     <string name="done">done</string>
+    <string name="completed">completed</string>
 
     <string name="top_left">Sprinter Situp</string>
     <string name="top_right">Lying Leg Raise</string>

@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 
         if (flag) {
             txt = findViewById(R.id.timer_left_top);
-            final CounterClass time = new CounterClass(3000, 1000, R.id.set_top_left, R.id.button_left_top);
+            final CounterClass time = new CounterClass(30000, 1000, R.id.set_top_left, R.id.button_left_top);
             time.start();
 
 
@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
     public void timerRightTop(View view) {
         if (flag ) {
             txt = findViewById(R.id.timer_right_top);
-            final CounterClass time = new CounterClass(3000, 1000, R.id.set_top_right, R.id.button_right_top);
+            final CounterClass time = new CounterClass(30000, 1000, R.id.set_top_right, R.id.button_right_top);
             time.start();
             flag = false;
         }
@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
     public void timerLeftBottom(View view) {
         if (flag ) {
             txt = findViewById(R.id.timer_left_bottom);
-            final CounterClass time = new CounterClass(3000, 1000, R.id.set_bottom_left, R.id.button_left_bottom);
+            final CounterClass time = new CounterClass(30000, 1000, R.id.set_bottom_left, R.id.button_left_bottom);
             time.start();
             flag = false;
         }
@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
     public void timerRightBottom(View view) {
         if (flag ) {
             txt = findViewById(R.id.timer_right_bottom);
-            final CounterClass time = new CounterClass(3000, 1000, R.id.set_bottom_right, R.id.button_right_bottom);
+            final CounterClass time = new CounterClass(30000, 1000, R.id.set_bottom_right, R.id.button_right_bottom);
             time.start();
             flag = false;
         }
@@ -125,7 +125,8 @@ public class MainActivity extends Activity {
             }
             if (i == 3) {
                 set.setAllCaps(true);
-                set.setText(getResources().getString(R.string.done));
+                set.setTextColor(getResources().getColor(R.color.done_color));
+                set.setText(getResources().getString(R.string.completed));
                 butt.setClickable(false);
                 i = 1;
 

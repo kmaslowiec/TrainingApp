@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="@drawable/background_dark_medium"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -54,6 +54,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin"
                 android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+
 
                 android:textSize="@dimen/set_size"
                 android:textColor="@color/black"
@@ -81,6 +83,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/done"
+
+
                 android:onClick="timerLeftTop"
                 />
 
@@ -121,6 +125,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin"
             android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
 
             android:textSize="@dimen/set_size"
             android:textColor="@color/black"
@@ -201,6 +206,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin"
             android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
 
             android:textSize="@dimen/set_size"
             android:textColor="@color/black"
@@ -265,6 +271,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin"
             android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
 
             android:textSize="@dimen/set_size"
             android:textColor="@color/black"
